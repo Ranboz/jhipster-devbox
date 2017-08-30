@@ -15,12 +15,14 @@
 
 This generates a new "development box" directly from this repository.
 
-- Clone this repository: `git clone https://github.com/jhipster/jhipster-devbox.git`
-- It is wise to use a tag to have a stable version: the JHipster DevBox tags are the same as the JHipster Generator tags, so using the DevBox v3.2.0 also means using the generator v3.2.0
+- Clone this repository: `git clone https://github.com/Ranboz/jhipster-devbox`
 - Run `vagrant up`
 
-## <a name="configure"></a> Configure your new box and install new software
+## Optional
+If doing multiple builds, using a repository cache VM will GREATLY speed your builds.  
+- To try, prior to creating the devbox, clone this repository: 'git https://github.com/Ranboz/apt-cache-vagrant' and then 'Vagrant up cache'
+- Or, use the most excellent original repo: 'git https://github.com/rgl/apt-cache-vagrant'.
+- Prior to generating the devbox, edit this file and uncomment where indicated: 
 
-Start up the new box:
-
-- Login using the `vagrant`,Password is `vagrant` (please note that default keyboard layout is US!)
+## Login 
+using the `vagrant`,Password is `vagrant`
