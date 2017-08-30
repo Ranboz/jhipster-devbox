@@ -6,7 +6,7 @@
 + Ubuntu Desktop
 + Eclipse-JEE
 + Google Chrome installed
-+ For multiple installs, May easily be configured with APT Cache to speed up package downloads.  (Comment out at.
++ Speed up package downloads with an APT Cache server(See "Optional" Below).
 - Not Guake
 - Not IntelliJ
 
