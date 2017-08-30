@@ -9,9 +9,6 @@ Vagrant.configure("2") do |config|
 	#config.vm.network :private_network, ip: '10.10.10.4'
     config.ssh.insert_key = true
     config.vm.synced_folder '.', '/vagrant', disabled: true
-	#If using an SSD on the machine running the VM, uncomment the below
-	#config.vm.customize ['storageattach', :id, '--storagectl', 'SATA Controller',
-                       '--port', '0', '--nonrotational', 'on']
 
     config.vm.provider :virtualbox do |vb|
         vb.gui = true
@@ -22,6 +19,7 @@ Vagrant.configure("2") do |config|
         vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
         vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
         vb.customize ['modifyvm', :id, '--draganddrop', 'bidirectional']
-		
+	#If using an SSD on the machine running the VM, uncomment the below
+        #vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller','--port', '0', '--nonrotational', 'on']
     end
 end
