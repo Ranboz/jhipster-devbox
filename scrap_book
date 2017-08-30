@@ -1,0 +1,11 @@
+#adduser vagrant
+#usermod -aG sudo vagrant
+#su - vagrant
+
+#Install RDP
+apt-get update
+apt-get install -y xrdp
+apt-get install -y xfce4
+echo “xfce4-session” > ~/.xsession
+/etc/init.d/xrdp start
+/etc/init.d/xrdp status
